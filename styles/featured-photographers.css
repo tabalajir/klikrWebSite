@@ -1,0 +1,215 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sec-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Featured Photographers Section */
+.featured-photographers {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.all-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Carousel Styles */
+.popular-list-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% / 4 - 15px); /* 4 slides per view */
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.swiper-slide:last-child {
+    margin-right: 0;
+}
+
+.img-holder {
+    position: relative;
+}
+
+.img-holder img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.img-holder .offer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.rate-like {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.rate-like .rating i {
+    color: #ffc107;
+    font-size: 14px;
+}
+
+.rate-like .likes {
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.rate-like .likes i {
+    margin-right: 5px;
+}
+
+/* List Content */
+.list-content {
+    padding: 15px;
+}
+
+.list-content h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.list-content h5 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.list-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.list-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-content ul li {
+    font-size: 14px;
+}
+
+.list-content ul li a {
+    text-decoration: none;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.list-content ul li i {
+    margin-right: 5px;
+}
+
+/* Carousel Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(255, 87, 34, 0.9);
+}
+
+/* Pagination */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff5722;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .swiper-slide {
+        width: calc(100% / 2 - 15px); /* 2 slides per view on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-slide {
+        width: 100%; /* 1 slide per view on mobile screens */
+    }
+}

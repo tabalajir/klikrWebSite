@@ -1,0 +1,60 @@
+.steps-section {
+    position: relative;
+    overflow: hidden
+}
+
+.steps {
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 60px 30px;
+    z-index: 1;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    box-shadow: 0 0 20px 0 rgba(89,89,89,0.15)
+}
+
+.steps:hover {
+    box-shadow: 0 0 50px 0 rgba(89,89,89,0.15)
+}
+
+.steps:before {
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: "";
+    height: 72px;
+    position: absolute;
+    width: 378px;
+    z-index: -1;
+    pointer-events: none
+}
+
+.steps-section [class*='col-']:nth-child(3) .steps:before {
+}
+
+.steps .icon-box i {
+    font-size: 60px;
+    display: inline-block;
+    color: #ff924a;
+    transition: all .6s cubic-bezier(0.82,1.65,0.54,1.53);
+    -webkit-transition: all .6s cubic-bezier(0.82,1.65,0.54,1.53);
+    -moz-transition: all .6s cubic-bezier(0.82,1.65,0.54,1.53);
+    -ms-transition: all .6s cubic-bezier(0.82,1.65,0.54,1.53);
+    -o-transition: all .6s cubic-bezier(0.82,1.65,0.54,1.53)
+}
+
+.steps:hover i {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+
+.cta-one {
+    background-color: #ff924a;
+    position: relative
+}
+
+.cta-content h3,.cta-content p {
+    color: #fff
+}

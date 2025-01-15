@@ -1,0 +1,13 @@
+.app-availability {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.app-links a {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #ff7f3e;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}

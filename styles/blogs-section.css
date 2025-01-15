@@ -1,0 +1,13 @@
+.blogs {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.blogs-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.blog {
+  width: 45%;
+}

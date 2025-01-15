@@ -1,0 +1,135 @@
+/* General Reset and Box-Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.web-header {
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #f4f4f4;
+}
+
+.upgrade-btn {
+  background-color: #fca311;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.upgrade-btn:hover {
+  background-color: #e57c00;
+}
+
+.upgrade-icon {
+  margin-right: 5px;
+}
+
+.user-info {
+  text-align: right;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.user-plan {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('../images/home/front_page.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Menu Items */
+.menu-item.active {
+  color: #fff;
+  background-color: #fca311;
+}
+
+/* Upgrade Button */
+.upgrade-btn {
+  background-color: #fca311;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.upgrade-btn:hover {
+  background-color: #e57c00;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    margin: 5px 0;
+  }
+
+  .user-info {
+    text-align: center;
+  }
+}

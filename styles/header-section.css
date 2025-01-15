@@ -1,0 +1,64 @@
+.header-section {
+  padding: 6px 13px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  padding: 10px 16px;
+  margin: 0 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+}
+
+.menu-item.selected {
+  background-color: #ff7f3e;
+  color: white;
+  font-weight: bold;
+}
+
+.upgrade-btn {
+  background-color: #f4a460;
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  margin: 0 16px;
+}
+
+.upgrade-btn .upgrade-icon {
+  color: #ff7f3e;
+  margin-right: 8px;
+}
+
+.upgrade-btn:hover {
+  background-color: #ff5733 ;
+}
+
+.user-info {
+  text-align: left;
+  margin-left: 16px;
+}
+
+.user-name {
+  font-size: 11px;
+  font-weight: bold;
+  color: black;
+}
+
+.user-role {
+  font-size: 10px;
+  color: black;
+}

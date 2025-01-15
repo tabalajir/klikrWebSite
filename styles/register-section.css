@@ -1,0 +1,93 @@
+/* Steps Section with Background */
+.steps-section {
+    background: url('../assets/images/home/cta-bg.png') no-repeat left center, #f9f9f9;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+}
+
+.steps {
+    background: #fff;
+    width: 200px; /* Increased size */
+    height: 200px; /* Increased size */
+    border-radius: 50%; /* Ensures the card remains circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto; /* Centers the cards */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.steps:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Inside Circular Card */
+.icon-box {
+    font-size: 40px;
+    color: #ff6347;
+}
+
+.steps h5 {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+.c-theme {
+    color: #ff6347;
+}
+
+/* Dotted Line Between Cards */
+.steps-section::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: auto;
+    background: url('../assets/images/home/shape1.png'); no-repeat center center;
+    background-size: contain;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* Adjust Layout for Cards */
+.steps-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Ensures cards are above the line */
+}
+
+.steps-section .steps:nth-child(odd) {
+    margin-top: 30px;
+}
+
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fadeInUp {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 {
+    transition-delay: 0.2s;
+}
+
+.delay-2 {
+    transition-delay: 0.4s;
+}
+
+.delay-3 {
+    transition-delay: 0.6s;
+}

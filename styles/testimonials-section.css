@@ -1,0 +1,13 @@
+.testimonials {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.testimonials-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testimonial {
+  width: 45%;
+}
