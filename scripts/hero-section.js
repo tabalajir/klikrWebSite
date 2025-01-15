@@ -1,16 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // Animating the Hero Section Text (Find your Favourite Photographer)
-  const heroText = document.querySelector('.hero-text');
-  if (heroText) {
-    heroText.classList.add('animate-hero-text');
-  }
+document.addEventListener("DOMContentLoaded", function () {
+  const selectElement = document.querySelector(".utf_chosen_select");
 
-  // Button animation effect or scroll action (Optional)
-  const heroButton = document.querySelector('.hero-button');
-  if (heroButton) {
-    heroButton.addEventListener('click', () => {
-      // For example: Smooth scroll to the next section (Services or Featured Photographers)
-      document.querySelector('.services-section').scrollIntoView({ behavior: 'smooth' });
+  // Load JSON Data
+  fetch("data/services.json")
+    .then((response) => response.json())
+    .then((data) => {
+      populateServicesDropdown(data);
+    })
+    .catch((error) => console.error("Error loading JSON:", error));
+
+  function populateServicesDropdown(services) {
+    services.forEach((service) => {
+      const option = document.createElement("option");
+      option.value = service.serviceId;
+      option.textContent = service.serviceDescription;
+      option.dataset.group = service.serviceGroup;
+      selectElement.appendChild(option);
     });
   }
 });

@@ -77,7 +77,7 @@ html, body {
 
 /* Hero Section */
 .hero-section {
-  background-image: url('../images/home/front_page.jpg');
+  background-image: url('../assets/images/home/front_page.jpg');
   background-size: cover;
   background-position: center;
   height: 400px;

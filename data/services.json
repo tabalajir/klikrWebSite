@@ -1,0 +1,176 @@
+[
+    {
+        "serviceId": "SERVI001",
+        "serviceName": "Cinematography",
+        "serviceDescription": "Cinematography",
+        "serviceGroup": "Video Production"
+    },
+    {
+        "serviceId": "SERVI002",
+        "serviceName": "Corporate",
+        "serviceDescription": "Corporate",
+        "serviceGroup": "Event Photography"
+    },
+    {
+        "serviceId": "SERVI003",
+        "serviceName": "Documentary",
+        "serviceDescription": "Documentary",
+        "serviceGroup": "Documentary and Highlights"
+    },
+    {
+        "serviceId": "SERVI004",
+        "serviceName": "E Commerce",
+        "serviceDescription": "E Commerce",
+        "serviceGroup": "Unknown"
+    },
+    {
+        "serviceId": "SERVI005",
+        "serviceName": "Family Events",
+        "serviceDescription": "Family Events",
+        "serviceGroup": "Event Photography"
+    },
+    {
+        "serviceId": "SERVI006",
+        "serviceName": "Fashion",
+        "serviceDescription": "Fashion",
+        "serviceGroup": "Commercial and Product Photography"
+    },
+    {
+        "serviceId": "SERVI007",
+        "serviceName": "Film Shoot",
+        "serviceDescription": "Film Shoot",
+        "serviceGroup": "Video Production"
+    },
+    {
+        "serviceId": "SERVI008",
+        "serviceName": "Food",
+        "serviceDescription": "Food",
+        "serviceGroup": "Commercial and Product Photography"
+    },
+    {
+        "serviceId": "SERVI009",
+        "serviceName": "other",
+        "serviceDescription": "other",
+        "serviceGroup": "Unknown"
+    },
+    {
+        "serviceId": "SERVI010",
+        "serviceName": "Product",
+        "serviceDescription": "Product",
+        "serviceGroup": "Commercial and Product Photography"
+    },
+    {
+        "serviceId": "SERVI011",
+        "serviceName": "Promo video",
+        "serviceDescription": "Promo video",
+        "serviceGroup": "Unknown"
+    },
+    {
+        "serviceId": "SERVI012",
+        "serviceName": "real estate",
+        "serviceDescription": "real estate",
+        "serviceGroup": "Commercial and Product Photography"
+    },
+    {
+        "serviceId": "SERVI013",
+        "serviceName": "School events",
+        "serviceDescription": "School events",
+        "serviceGroup": "Event Photography"
+    },
+    {
+        "serviceId": "SERVI014",
+        "serviceName": "Short film",
+        "serviceDescription": "Short film",
+        "serviceGroup": "Unknown"
+    },
+    {
+        "serviceId": "SERVI015",
+        "serviceName": "Sports",
+        "serviceDescription": "Sports",
+        "serviceGroup": "Specialty Photography"
+    },
+    {
+        "serviceId": "SERVI016",
+        "serviceName": "Vaction Photography",
+        "serviceDescription": "Vaction Photography",
+        "serviceGroup": "Unknown"
+    },
+    {
+        "serviceId": "SERVI017",
+        "serviceName": "wedding",
+        "serviceDescription": "wedding",
+        "serviceGroup": "Event Photography"
+    },
+    {
+        "serviceId": "SERVI018",
+        "serviceName": "wildlife",
+        "serviceDescription": "wildlife",
+        "serviceGroup": "Unknown"
+    },
+    {
+        "serviceId": "SERVI019",
+        "serviceName": "Baby Shower & Kids",
+        "serviceDescription": "Baby Shower & Kids",
+        "serviceGroup": "Event Photography"
+    },
+    {
+        "serviceId": "SERVI020",
+        "serviceName": "Birthday",
+        "serviceDescription": "Birthday",
+        "serviceGroup": "Event Photography"
+    },
+    {
+        "serviceId": "SERVI021",
+        "serviceName": "Candid",
+        "serviceDescription": "Candid",
+        "serviceGroup": "Event Photography"
+    },
+    {
+        "serviceId": "SERVI022",
+        "serviceName": "Corporate",
+        "serviceDescription": "Corporate",
+        "serviceGroup": "Event Photography"
+    },
+    {
+        "serviceId": "SERVI023",
+        "serviceName": "Ecommerce",
+        "serviceDescription": "Ecommerce",
+        "serviceGroup": "Commercial and Product Photography"
+    },
+    {
+        "serviceId": "SERVI024",
+        "serviceName": "Film Shoot",
+        "serviceDescription": "Film Shoot",
+        "serviceGroup": "Video Production"
+    },
+    {
+        "serviceId": "SERVI025",
+        "serviceName": "HD Highlights",
+        "serviceDescription": "HD Highlights",
+        "serviceGroup": "Documentary and Highlights"
+    },
+    {
+        "serviceId": "SERVI026",
+        "serviceName": "HD Videos",
+        "serviceDescription": "HD Videos",
+        "serviceGroup": "Video Production"
+    },
+    {
+        "serviceId": "SERVI027",
+        "serviceName": "Montage",
+        "serviceDescription": "Montage",
+        "serviceGroup": "Documentary and Highlights"
+    },
+    {
+        "serviceId": "SERVI028",
+        "serviceName": "Outdoor Shoot",
+        "serviceDescription": "Outdoor Shoot",
+        "serviceGroup": "Video Production"
+    },
+    {
+        "serviceId": "SERVI029",
+        "serviceName": "Portraits",
+        "serviceDescription": "Portraits",
+        "serviceGroup": "Portraits and Shoots"
+    }
+]
