@@ -8,26 +8,31 @@
       <p class="hero-subtitle">Find the best wedding photographers with thousands of trusted reviews</p>
       <form action="#" class="hero-form">
         <div class="main-input-search-part">
-          <!-- Search Input -->
+          <!-- Label and Search Input -->
           <div class="main-input-search-part-item">
-            <input id="searchQuery" type="text" placeholder="What are you looking for?" />
+            <label for="searchQuery">What are you looking for?</label>
+            <input id="searchQuery" type="text" placeholder="Type here..." />
           </div>
 
           <!-- Location Input -->
           <div class="main-input-search-part-item location">
-            <input id="searchLocation" type="text" placeholder="Search Location..." />
-            <a href="#"><i class="sl sl-icon-location"></i></a>
+            <label for="searchLocation">Search Location...</label>
+            <input id="searchLocation" type="text" placeholder="Enter location..." />
           </div>
 
           <!-- Category Dropdown -->
           <div class="main-input-search-part-item">
+            <label for="categorySelect">Choose Category</label>
             <select id="categorySelect" class="utf-chosen-select">
-              <option disabled selected>Choose Category</option>
+              <option disabled selected>Select Category</option>
+              <!-- Dynamic options can be added via JavaScript -->
             </select>
           </div>
 
           <!-- Search Button -->
-          <button class="button" id="searchButton">Search</button>
+          <div class="main-input-search-part-item">
+            <button class="button" id="searchButton">Search</button>
+          </div>
         </div>
       </form>
     </div>

@@ -29,29 +29,47 @@
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+    width: 80%;
   }
   
   .hero-title {
     font-size: 2.5rem;
     font-weight: 700;
+    margin-bottom: 10px;
   }
   
   .hero-subtitle {
     font-size: 1.2rem;
-    margin: 10px 0 20px;
+    margin-bottom: 20px;
   }
   
   .main-input-search-part {
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
     justify-content: center;
   }
   
-  .main-input-search-part-item input,
-  .main-input-search-part-item select {
-    padding: 10px;
-    border: 1px solid #ddd;
+  .main-input-search-part-item {
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  .main-input-search-part-item label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .main-input-search-part input,
+  .main-input-search-part select {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
     border-radius: 5px;
+    border: 1px solid #ddd;
     font-size: 1rem;
   }
   

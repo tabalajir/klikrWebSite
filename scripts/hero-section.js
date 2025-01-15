@@ -18,4 +18,22 @@ document.addEventListener("DOMContentLoaded", function () {
       selectElement.appendChild(option);
     });
   }
+
+  // Search button functionality
+  const searchButton = document.getElementById("searchButton");
+  searchButton.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const query = document.getElementById("searchQuery").value.trim();
+    const location = document.getElementById("searchLocation").value.trim();
+    const category = selectElement.value;
+
+    if (query && location && category) {
+      alert(
+        `Searching for ${query} in ${location} under ${category} category.`
+      );
+    } else {
+      alert("Please fill out all fields before searching.");
+    }
+  });
 });
