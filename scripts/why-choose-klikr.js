@@ -1,14 +1,13 @@
-// why-choose-klikr.js
-document.getElementById("why-choose").innerHTML = `
-  <section id="why-choose">
-    <div class="container">
-      <h2>Why Choose Klikr?</h2>
-      <ul>
-        <li>Verified Photographers</li>
-        <li>Wide Range of Services</li>
-        <li>Convenient Online Booking</li>
-        <li>Trusted by Thousands of Clients</li>
-      </ul>
-    </div>
-  </section>
-`;
+document.addEventListener('DOMContentLoaded', () => {
+  const features = document.querySelectorAll('.feature');
+
+  features.forEach((feature) => {
+      feature.addEventListener('mouseenter', () => {
+          feature.style.backgroundColor = '#f0f8ff'; // Light blue on hover
+      });
+
+      feature.addEventListener('mouseleave', () => {
+          feature.style.backgroundColor = '#fff'; // Revert to white
+      });
+  });
+});

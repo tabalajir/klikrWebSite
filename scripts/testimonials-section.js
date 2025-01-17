@@ -1,16 +1,31 @@
-// testimonials-section.js
-document.getElementById("testimonials").innerHTML = `
-  <section id="testimonials">
-    <div class="container">
-      <h2>What Our Clients Say</h2>
-      <div class="testimonial">
-        <p>"Klikr helped us find the perfect photographer for our wedding. The experience was amazing!"</p>
-        <h4>- Sarah & James</h4>
-      </div>
-      <div class="testimonial">
-        <p>"The app is easy to use, and we got high-quality photos in no time. Highly recommend!"</p>
-        <h4>- Emily & Mike</h4>
-      </div>
-    </div>
-  </section>
-`;
+document.addEventListener('DOMContentLoaded', () => {
+  const testimonials = document.querySelectorAll('.testimonial');
+  const prevButton = document.getElementById('prev');
+  const nextButton = document.getElementById('next');
+  let currentIndex = 0;
+
+  // Function to show the current testimonial
+  const showTestimonial = (index) => {
+      testimonials.forEach((testimonial, i) => {
+          testimonial.classList.remove('active');
+          if (i === index) {
+              testimonial.classList.add('active');
+          }
+      });
+  };
+
+  // Show the first testimonial initially
+  showTestimonial(currentIndex);
+
+  // Event Listener for Previous Button
+  prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(currentIndex);
+  });
+
+  // Event Listener for Next Button
+  nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % testimonials.length;
+      showTestimonial(currentIndex);
+  });
+});

@@ -1,54 +1,52 @@
-// register-section.js
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('enquiryForm');
 
-document.addEventListener("DOMContentLoaded", () => {
-  const steps = document.querySelectorAll(".steps");
-  const stepsSection = document.querySelector(".steps-section");
+  form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Prevent the form from submitting normally
 
-  // Helper to check if an element is in the viewport
-  const isInViewport = (element) => {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  };
+      const formData = new FormData(form);
+      const enquiryData = {};
 
-  // Animate cards when in viewport
-  const animateSteps = () => {
-    steps.forEach((step, index) => {
-      if (isInViewport(step)) {
-        step.classList.add("fadeInUp", `delay-${index + 1}`);
+      formData.forEach((value, key) => {
+          enquiryData[key] = value;
+      });
+
+      // Simple validation check
+      if (!validateForm(enquiryData)) {
+          alert('Please fill out all required fields correctly.');
+          return;
       }
-    });
-  };
 
-  // Ensure the dotted line connects dynamically
-  const adjustDottedLine = () => {
-    const line = document.querySelector(".dotted-line");
-    const firstStep = steps[0];
-    const lastStep = steps[steps.length - 1];
+      console.log('Form submitted:', enquiryData);
+      alert('Thank you for your enquiry. We will get back to you soon!');
 
-    if (line && firstStep && lastStep) {
-      const startX = firstStep.getBoundingClientRect().left + firstStep.offsetWidth / 2;
-      const startY = firstStep.getBoundingClientRect().top + firstStep.offsetHeight / 2;
+      // Reset the form after submission
+      form.reset();
+  });
 
-      const endX = lastStep.getBoundingClientRect().left + lastStep.offsetWidth / 2;
-      const endY = lastStep.getBoundingClientRect().top + lastStep.offsetHeight / 2;
+  function validateForm(data) {
+      const requiredFields = ['eventType', 'location', 'date', 'time', 'budget', 'name', 'mobileNo', 'emailId'];
 
-      line.style.left = `${startX}px`;
-      line.style.top = `${startY}px`;
-      line.style.width = `${Math.sqrt(Math.pow(endX - startX, 2) + Math.pow(endY - startY, 2))}px`;
-      line.style.transform = `rotate(${Math.atan2(endY - startY, endX - startX)}rad)`;
-    }
-  };
+      for (const field of requiredFields) {
+          if (!data[field]) {
+              return false;
+          }
+      }
 
-  // Attach scroll and resize events
-  window.addEventListener("scroll", animateSteps);
-  window.addEventListener("resize", adjustDottedLine);
+      const mobilePattern = /^[0-9]{10}$/;
+      const emailPattern = /^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/;
 
-  // Initial execution
-  animateSteps();
-  adjustDottedLine();
+      if (!mobilePattern.test(data.mobileNo)) {
+          alert('Please enter a valid 10-digit mobile number.');
+          return false;
+      }
+
+      if (!emailPattern.test(data.emailId)) {
+          alert('Please enter a valid email address.');
+          return false;
+      }
+
+      return true;
+  }
 });

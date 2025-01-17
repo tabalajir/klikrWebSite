@@ -1,13 +1,89 @@
-.testimonials {
+/* General Section Styling */
+#customer-reviews {
   text-align: center;
-  padding: 60px 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
 }
 
-.testimonials-list {
+#customer-reviews h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Carousel Container */
+.carousel {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
+/* Testimonial Cards */
 .testimonial {
-  width: 45%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.5s ease-in-out;
+  display: none;
+}
+
+.testimonial.active {
+  opacity: 1;
+  transform: scale(1);
+  display: block;
+}
+
+/* Review Text */
+.review-text {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+/* Star Ratings */
+.rating {
+  font-size: 1.5em;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+/* Event Image */
+.event-image img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Customer Name */
+.customer-name {
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Carousel Controls */
+.carousel-controls {
+  margin-top: 15px;
+}
+
+.control {
+  font-size: 1.5em;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #555;
+  margin: 0 10px;
+}
+
+.control:hover {
+  color: #000;
 }
