@@ -29,36 +29,51 @@
 
 .upgrade-btn {
   background-color: #f4a460;
-  padding: 8px 16px;
+  padding: 8px 12px; /* Reduced padding */
   border-radius: 20px;
   display: flex;
   align-items: center;
   cursor: pointer;
   border: none;
-  margin: 0 16px;
+  margin: 0 10px; /* Reduced margin */
+  white-space: nowrap; /* Ensures text stays in one line */
+  font-size: 14px; /* Adjusted font size */
 }
 
 .upgrade-btn .upgrade-icon {
   color: #ff7f3e;
-  margin-right: 8px;
+  margin-right: 6px; /* Reduced space between icon and text */
 }
 
 .upgrade-btn:hover {
-  background-color: #ff5733 ;
+  background-color: #ff5733;
 }
 
+/* User Info Styling */
 .user-info {
   text-align: left;
-  margin-left: 16px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2; /* Compact spacing between lines */
+  max-width: 160px; /* Ensure text wraps properly */
 }
 
 .user-name {
-  font-size: 11px;
+  font-size: 14px; /* Increased font size for prominence */
   font-weight: bold;
   color: black;
+  margin: 0; /* No margin */
+  white-space: nowrap; /* Prevents line breaks within the name */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds ellipsis if name overflows */
 }
 
 .user-role {
-  font-size: 10px;
-  color: black;
+  font-size: 12px; /* Slightly smaller font size for role */
+  color: #555; /* Subtle color for role description */
+  margin: 0; /* No margin */
+  white-space: nowrap; /* Prevents line breaks */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds ellipsis if role overflows */
 }
