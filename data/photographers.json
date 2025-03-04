@@ -1,0 +1,54 @@
+{
+    "data": [
+        {
+            "offer": "ASSO. MEMBER",
+            "src": "assets/images/Photographers/photo1.jpg",
+            "rating": 3,
+            "likes": 10,
+            "studio": "Outlander Photo Studio",
+            "description": "We are a professional photography services company.",
+            "location": "Viluppuram",
+            "mobileno": "+91 9876543210"
+        },
+        {
+            "offer": "Verified MEMBER",
+            "src": "assets/images/Photographers/photo2.jpg",
+            "rating": 4.5,
+            "likes": 3,
+            "studio": "Dreams Photo Studio",
+            "description": "We are a traditional photography services company.",
+            "location": "Viluppuram",
+            "mobileno": "+91 9876543210"
+        },
+        {
+            "offer": "",
+            "src": "assets/images/Photographers/photo3.jpg",
+            "rating": 4,
+            "likes": 100,
+            "studio": "Kodak Photo Studio",
+            "description": "We are a modern and professional photography services company.",
+            "location": "Chennai",
+            "mobileno": "+91 8985623345"
+        },
+        {
+            "offer": "",
+            "src": "assets/images/Photographers/photo4.jpg",
+            "rating": 3.5,
+            "likes": 50,
+            "studio": "Konica Color Lab & Studio",
+            "description": "Photography service is our primary service.",
+            "location": "Manali",
+            "mobileno": "+91 7654343567"
+        },
+        {
+            "offer": "ASSO. MEMBER",
+            "src": "assets/images/Photographers/photo1.jpg",
+            "rating": 2.5,
+            "likes": 100,
+            "studio": "Island Photo Studio",
+            "description": "We are a professional outdoor photography services company.",
+            "location": "Sivakasi",
+            "mobileno": "+91 9876543210"
+        }
+    ]
+}
